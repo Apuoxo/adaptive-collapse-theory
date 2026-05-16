@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{mdframed}
+
+\geometry{top=25mm,bottom=25mm,left=20mm,right=20mm}
+
+\title{\textbf{The Hidden Clock of the Universe: How Adaptive Collapse Theory Enables Calculating the Lifespan of Information Structures}}
+\author{\textbf{Locus} (Stanislav Stanislavovych Usychenko)}
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+In modern science, entropy and chaos are traditionally viewed as unpredictable, blind forces that gradually erode order. This paper presents a qualitatively new concept — \textbf{Adaptive Collapse Theory}. By expanding the classical phase space and introducing a fundamental hidden stability parameter $L(t)$, we demonstrate that the destruction of information and material objects is not a game of chance, but a strictly deterministic trajectory that can and must be predicted.
+\end{abstract}
+
+\section{Intuitive Explanation}
+
+Consider a smartphone with a degrading battery. At home it works perfectly. But on a cold day, it suddenly dies. Why? Because its hidden resource (battery capacity) was nearly exhausted, even though the phone looked healthy.
+
+Any complex system — a bridge, an AI model, a company, a language — has a hidden stability margin $L$. It spends this resource to remain ordered. When $L$ approaches zero, collapse is sudden, inevitable, and calculable.
+
+\section{Extended State Space}
+
+Classical physics tracks only the visible state $S(t)$. We introduce an extended vector:
+\begin{equation}
+X(t) = (S(t), L(t))
+\end{equation}
+where $L(t)$ is the adaptive stability margin — the hidden structural tolerance.
+
+\section{Free Energy Functional}
+
+\begin{equation}
+F[X(t)] = V(S-G) + U(L) + C(S,L)
+\end{equation}
+The coupling term encodes positive feedback:
+\begin{equation}
+C(S,L) = \frac{\lambda(S-G)^2}{L}
+\end{equation}
+As $L$ decreases, the impact of deviations amplifies — a vicious cycle leading to collapse.
+
+\section{Three Types of Entropy}
+
+\begin{itemize}
+    \item \textbf{Random:} environmental noise ($\xi(t)$).
+    \item \textbf{Intentional:} targeted attack bypasses gradual aging.
+    \item \textbf{Built-in:} even in vacuum, system spends $L$ just to remain ordered: $U(L) = \mu \ln(1/L)$.
+\end{itemize}
+
+\section{Connection to ACE and $L^2/t$}
+
+In earlier work (ACE), we empirically found that token viability in LLM caches follows:
+\begin{equation}
+v = \frac{w^2}{t+1}
+\end{equation}
+The present theory explains this: in overdamped regime, the equation of motion yields:
+\begin{equation}
+L^2 = L_0^2 - \gamma t
+\end{equation}
+or equivalently:
+\begin{equation}
+\frac{L^2}{t} \approx \text{const}
+\end{equation}
+Thus, the empirical ACE heuristic is a consequence of a deeper variational principle.
+
+\section{Equation of Motion for Hidden Resource}
+
+From $\delta A[X] = 0$:
+\begin{equation}
+m_L \frac{d^2L}{dt^2} = -\frac{\mu}{L} + \frac{\lambda(S-G)^2}{L^2} + \xi_L(t)
+\end{equation}
+In overdamped regime ($S \approx G$):
+\begin{equation}
+L^2 \approx L_0^2 - 2\mu t
+\end{equation}
+
+\section{Conclusion}
+
+Collapse is not accidental. It is the inevitable free-energy trajectory of any ordered system. The theory provides a mathematical framework to predict failure long before visible destruction.
+
+\section*{Acknowledgments}
+Empirical validation on transformers (ACE) served as the starting point.
+
+\begin{thebibliography}{99}
+\bibitem{ace} S. Usychenko, "Adaptive Collapse Dynamics: A General L²/t Principle from Gene Regulation to Transformer KV-Cache," 2026.
+\bibitem{linux} S. Usychenko, "l2t-page-replacement: Practical Page Replacement Policy for Linux," GitHub, 2026.
+\end{thebibliography}
+
+\end{document}
